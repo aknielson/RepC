@@ -14,6 +14,12 @@ namespace RepC.TestConsole
             using (var uow = new UnitOfWork())
             {
                 var person = uow.People.GetAll().FirstOrDefault();
+                var phone = person.Phones.FirstOrDefault();
+                var address = person.Address;
+                var wtf = phone.PhoneNumber;
+                var phones = person.Phones.ToList();
+               
+               
                 Console.WriteLine(person.LastName);
                 Console.WriteLine();
             }

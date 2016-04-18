@@ -9,7 +9,7 @@ namespace RepC.Domain.Models
         public string PhoneNumber { get; set; }
         public int PhoneTypeId { get; set; }
         public int PersonId { get; set; }
-        public virtual Person Person { get; set; }
+        //public virtual Person Person { get; set; }
         public virtual PhoneType PhoneType { get; set; }
     }
 }

@@ -25,11 +25,11 @@ namespace RepC.EFData.Models.Mapping
             this.Property(t => t.PersonId).HasColumnName("PersonId");
 
             // Relationships
-            this.HasRequired(t => t.Person)
-                .WithMany(t => t.Phones)
-                .HasForeignKey(d => d.PersonId);
+            //this.HasRequired(t => t.Person)
+            //    .WithMany(t => t.Phones)
+            //    .HasForeignKey(d => d.PersonId);
             this.HasRequired(t => t.PhoneType)
-                .WithMany(t => t.Phones)
+                .WithMany()
                 .HasForeignKey(d => d.PhoneTypeId);
 
         }

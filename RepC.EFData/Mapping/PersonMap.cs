@@ -39,7 +39,7 @@ namespace RepC.EFData.Models.Mapping
 
             // Relationships
             this.HasOptional(t => t.Address)
-                .WithMany(t => t.People)
+                .WithMany()
                 .HasForeignKey(d => d.AddressId);
 
         }
