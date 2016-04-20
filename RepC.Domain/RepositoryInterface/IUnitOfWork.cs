@@ -12,7 +12,7 @@ namespace RepC.Domain.RepositoryInterface
 
         //Must Add Repository for each Model
         // IPersonRepository People { get; }
-        IRepository<Person> People { get; }
+        IHydrateRepository<Person> People { get; }
         IRepository<Address> Addresses { get; }
         IRepository<Phone> Phones { get; }
         IRepository<PhoneType> PhoneTypes { get; }

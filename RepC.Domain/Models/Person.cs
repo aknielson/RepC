@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using RepC.Domain.RepositoryInterface;
 
 namespace RepC.Domain.Models
 {
-    public partial class Person
+    public partial class Person 
     {
         public Person()
         {

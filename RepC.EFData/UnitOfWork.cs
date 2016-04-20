@@ -16,8 +16,10 @@ namespace RepC.EFData
         public UnitOfWork(AddressBookAlphaContext context)
         {
             _context = context;
-            //_context.Configuration.ProxyCreationEnabled = false;
-            People = new Repository<Person>(_context);
+            _context.Configuration.ProxyCreationEnabled = false;
+            //People = new Repository<Person>(_context);
+            People = new PersonRepository(_context);
+           
             Addresses = new Repository<Address>(_context);
             Phones = new Repository<Phone>(_context);
             PhoneTypes = new Repository<PhoneType>(_context);
@@ -29,7 +31,7 @@ namespace RepC.EFData
         }
       
 
-        public IRepository<Person> People { get; }
+        public IHydrateRepository<Person> People { get; }
         public IRepository<Address> Addresses { get; }
         public IRepository<Phone> Phones { get; }
         public IRepository<PhoneType> PhoneTypes { get; }

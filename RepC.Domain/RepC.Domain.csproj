@@ -45,7 +45,7 @@
     <Compile Include="Models\Phone.cs" />
     <Compile Include="Models\PhoneType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryInterface\IPersonRepository.cs" />
+    <Compile Include="RepositoryInterface\IHydrateRepository.cs" />
     <Compile Include="RepositoryInterface\IRepository.cs" />
     <Compile Include="RepositoryInterface\IUnitOfWork.cs" />
   </ItemGroup>
